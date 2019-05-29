@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.empty.ShopcartEntity" table="shopcart" schema="tmsql">
+        <id name="shopId" column="shopId"/>
+        <property name="productId" column="productId"/>
+        <property name="owner" column="owner"/>
+        <property name="productPrice" column="productPrice"/>
+        <property name="productNum" column="productNum"/>
+        <property name="productName" column="productName"/>
+    </class>
+</hibernate-mapping>

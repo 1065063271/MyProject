@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.empty.ShopcarEntity" table="shopcar" schema="tmsql">
+        <composite-id>
+            <key-property name="ProductId" column="ProductId"/>
+            <key-property name="userId" column="userId"/>
+        </composite-id>
+        <property name="ProductPrice" column="ProductPrice"/>
+        <property name="ProductNum" column="ProductNum"/>
+        <property name="ProductName" column="ProductName"/>
+    </class>
+</hibernate-mapping>

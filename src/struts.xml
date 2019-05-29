@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="struts2" extends="struts-default">
+        <action name="login" class="action.loginres.LoginAction">
+            <result name="success">/home.jsp</result>
+            <result name="input">/login.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+        <action name="register" class="action.loginres.RegisterAction">
+            <result name="success">/login.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="search" class="action.sear.SearchAction">
+            <result name="success">/search.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="shopcar" class="action.shop.ShopAction">
+            <result name="success">/shopcar.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="userd" class="action.used.UserdAction">
+            <result name="success">/home.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="person" class="action.person.PersonAction">
+        <result name="success">/personc.jsp</result>
+        <result name="input">/register.jsp</result>
+        <result name="error">/register.jsp</result>
+    </action>
+        <action name="induc" class="action.induc.InducAction">
+        <result name="success">/introduction.jsp</result>
+        <result name="input">/register.jsp</result>
+        <result name="error">/register.jsp</result>
+    </action>
+        <action name="add" class="action.add.AddAction">
+            <result name="success">/home.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="sred" class="action.sred.SredAction">
+            <result name="success">/shopcar.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="sadd" class="action.sadd.SaddAction">
+            <result name="success">/shopcar.jsp</result>
+            <result name="input">/register.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+    </package>
+</struts>
