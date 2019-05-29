@@ -23,7 +23,6 @@ public class InducAction  extends ActionSupport{
             InducInfo info= new InducInfo();
             list=info.queryInfo(productid);
             ActionContext.getContext().getSession().put("greeting2", list);
-            System.out.println(123123);
             message=SUCCESS;
             return message;
     }
